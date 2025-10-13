@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buckshot Roulette</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0">
+  <defs>
+    <filter id="pixelate" x="0" y="0">
+      <feFlood x="2" y="2" height="1" width="1"/>
+      <feComposite width="2" height="2"/>
+      <feTile result="a"/>
+      <feComposite in="SourceGraphic" in2="a" operator="in"/>
+      <feMorphology operator="dilate" radius="0.5"/>
+    </filter>
+  </defs>
+</svg>-->
+
+
+<div class="crt">
+
+  <div class="crt-content">
+
+    <!-- Blood Overlay -->
+    <div class="overlay" id="blood-overlay">
+      <img src="images/blood/layer0.png" class="blood-layer layer-1" />
+      <img src="images/blood/layer1.png" class="blood-layer layer-2" />
+      <img src="images/blood/layer2.png" class="blood-layer layer-3" />
+      <img src="images/blood/layer3.png" class="blood-layer layer-4" />
+    </div>
+
+    <!-- White Screen Overlay -->
+    <div class="overlay" id="white-overlay" style="display: none;"></div>
+
+    <!-- Name Input Overlay -->
+    <div class="overlay" id="name-overlay" style="display: none;">
+        <form class="input-box" onsubmit="StartGame()">
+        <label>Player 1 Name: <input id="name-input-p1" maxlength="6"/></label><br />
+        <label>Player 2 Name: <input id="name-input-p2" maxlength="6"/></label><br />
+        <button onclick="StartGame()">Start Game</button>
+        </form>
+    </div>
+    
+    <!-- Round Overlay -->
+    <div class="overlay" id="round-overlay" style="display: none;">
+      <div class="round">
+        <div><img src="images/round 1.png"></div>
+        <div class="outer-circle">
+          <div class="inner-circle visible"></div>
+        </div>
+      </div>
+      <div class="round">
+        <div><img src="images/round 2.png"></div>
+        <div class="outer-circle">
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+      <div class="round">
+        <div><img src="images/round 3.png"></div>
+        <div class="outer-circle">
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Winner Overlay -->
+    <div class="overlay" id="winner-overlay" style="display: none;">
+      <div class="winner-text" id="winner-text"></div>
+    </div>
+    
+    
+    <!-- Scoreboard -->
+    <div class="scoreboard" id="scoreboard" style="display: none;">
+      <div class="top">
+        <div class="top-section left">
+          <div id="name-p1" class="name left"></div>
+        </div>
+        <div class="top-section center"></div>
+        <div class="top-section right">
+          <div id="name-p2" class="name right"></div>
+        </div>
+      </div>
+    
+      <div class="bottom">
+        <div class="bottom-section left score" id="score-p1"></div>
+        <div class="bottom-section right score" id="score-p2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="audio.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
