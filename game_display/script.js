@@ -2,6 +2,9 @@
 
 // Music
 music_folder = "../Music/"
+root_folder = "game_display/"
+audio_folder = root_folder + "audio/"
+images_folder = root_folder + "images/"
 
 const album1 = [
   "Mike Klubnika - BUCKSHOT ROULETTE/Mike Klubnika - BUCKSHOT ROULETTE - 01 Blank Shell.mp3",
@@ -69,19 +72,19 @@ function MusicSwitch() {
 }
 
 const soundEffects = {
-  "bootup": "audio/my_bootup.wav",
-  "health_counter_bootup": "audio/health counter bootup.ogg",
-  "health_counter_beep": "audio/health counter beep2.wav",
-  "health_counter_heal": "audio/health counter confirmation.ogg",
-  "health_counter_decrease": "audio/health counter reduce health.ogg",
-  "heartbeat": "audio/heartbeat effect.ogg",
-  "heartbeat2": "audio/heartbeat effect2.ogg",
-  "round_blink": "audio/round blinker wave.ogg",
-  "round_hum": "audio/my_round indicator hum.wav",
-  "round_shut_down": "audio/round indicator shut down.ogg",
-  "shoot": "audio/temp gunshot_live.wav",
-  "winner": "audio/winner.ogg",
-  "shut_down": "audio/crt_turn off display2.ogg"
+  "bootup": audio_folder + "my_bootup.wav",
+  "health_counter_bootup": audio_folder + "health counter bootup.ogg",
+  "health_counter_beep": audio_folder + "health counter beep2.wav",
+  "health_counter_heal": audio_folder + "health counter confirmation.ogg",
+  "health_counter_decrease": audio_folder + "health counter reduce health.ogg",
+  "heartbeat": audio_folder + "heartbeat effect.ogg",
+  "heartbeat2": audio_folder + "heartbeat effect2.ogg",
+  "round_blink": audio_folder + "round blinker wave.ogg",
+  "round_hum": audio_folder + "my_round indicator hum.wav",
+  "round_shut_down": audio_folder + "round indicator shut down.ogg",
+  "shoot": audio_folder + "temp gunshot_live.wav",
+  "winner": audio_folder + "winner.ogg",
+  "shut_down": audio_folder + "crt_turn off display2.ogg"
 }
 
 
@@ -102,7 +105,7 @@ const scoreboard = document.getElementById('scoreboard');
 const round_overlay = document.getElementById('round-overlay');
 const winner_overlay = document.getElementById('winner-overlay');
 
-const charge_img = 'images/charge.png';
+const charge_img = images_folder + 'charge.png';
 shift_pressed = false;
 
 
