@@ -151,6 +151,10 @@ function StartGame() {
   // Hide the Name Input
   name_input_overlay.style.display = 'none';
 
+  // Fill in names
+  document.querySelector('.left .name').textContent = player1.name;
+  document.querySelector('.right .name').textContent = player2.name;
+
   // Show Round 1
   ShowRound(1);
   //ShowScoreboard();
@@ -205,10 +209,6 @@ function RoundMusic() {
 function ShowScoreboard() {
   console.log("Scoreboard!");
   name_input_overlay.style.display = 'none';
-  if (round == 1) {
-    document.querySelector('.left .name').textContent = player1.name;
-    document.querySelector('.right .name').textContent = player2.name;
-  }
   scoreboard.style.display = 'flex';
   // Sound
   PlaySound(soundEffects["health_counter_bootup"]);

@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'Dot Matrix';
-	src: url('game_display/fonts/DOTMATRI.TTF') format('truetype');
+	src: url('fonts/DOTMATRI.TTF') format('truetype');
 }
 @font-face {
 	font-family: 'HydrogenType';
-	src: url('game_display/fonts/HydrogenType.ttf') format('truetype');
+	src: url('fonts/HydrogenType.ttf') format('truetype');
 }
 
 * {
@@ -236,7 +236,7 @@ body {
 }
 
 #name-overlay {
-	cursor: url('game_display/images/cursor_default.png'), auto;
+	cursor: url('images/cursor_default.png'), auto;
 }
 
 .input-box {
@@ -247,7 +247,7 @@ body {
 }
 
 .input-box label {
-	cursor: url('game_display/images/cursor_default.png'), auto;
+	cursor: url('images/cursor_default.png'), auto;
 }
 
 .input-box input {
@@ -257,11 +257,11 @@ body {
 	border: 2px solid #c5ffb7;
 	font-family: inherit;
 	color: #c5ffb7;
-	cursor: url('game_display/images/cursor_text.png'), auto;
+	cursor: url('images/cursor_text.png'), auto;
 }
 
 .input-box button {
-	cursor: url('game_display/images/cursor_pointer.png'), auto;
+	cursor: url('images/cursor_pointer.png'), auto;
 	font-size: 55px;
 	font-family: inherit;
 	padding: 0.5rem 1.5rem;
